@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 让页面在手机上按实际宽度渲染，而不是缩小显示 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryelin - 主页</title>
+  <meta name="description" content="Ryelin 的个人学术主页：研究方向、履历、荣誉与课程。" />
+  <!-- 引入本页专用样式表（与 scholar.html 共用） -->
+  <link rel="stylesheet" href="assets/css/ryelin.css" />
+
+  <!-- ===== MathJax：用于渲染页面中的行内/行间数学公式 ===== -->
+  <script>
+    // 配置 MathJax：行内公式使用 $...$，行间公式使用 $$...$$
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        // 跳过 pre/code 等代码块，避免误渲染
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <!-- ===================== 顶部导航栏 ===================== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Ryelin</a>
+      <div class="nav-links">
+        <!-- 当前页 index.html 用 active 高亮 -->
+        <a class="active" href="index.html">主页</a>
+        <a href="scholar.html">学术论文与笔记</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ===================== 个人信息头部 ===================== -->
+    <section class="profile">
+      <!-- 个人照片：文件位于 images/Ryelin.jpg -->
+      <img class="photo" src="images/Ryelin.jpg" alt="Ryelin 的照片" />
+
+      <div class="intro">
+        <h1>Ryelin</h1>
+
+        <!-- 单位与身份 -->
+        <p>
+          <a href="http://www.iop.cas.cn/" target="_blank" rel="noopener">中国科学院物理研究所</a>
+          2025 级博士研究生
+        </p>
+
+        <!-- 联系方式：邮箱做了 mailto 链接，点击可直接发信 -->
+        <p class="muted">
+          Contact me at:
+          <a href="mailto:ryelin_scw@iphy.ac.cn">ryelin_scw@iphy.ac.cn</a>
+        </p>
+
+        <!-- 引导读者前往学术页 -->
+        <p class="muted">
+          学术论文与读书笔记请见 <a href="scholar.html">此处</a>。
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 学习/研究方向 ===================== -->
+    <h2>学习 / 研究方向</h2>
+    <ul class="clean">
+      <li>凝聚态理论、强关联量子多体理论与数值研究</li>
+      <li>主要关注自旋 / 玻色子系统的格点模型的基态相图，没准以后会去考虑有限温的情形或者更有前途的情形</li>
+      <li>目前主要采用随机级数展开（SSE）的蒙卡数值手段，当然没准以后会去考虑对不同模型调用不同的数值手段来关注物理</li>
+      <li>目前有两条研究主线
+        <ul class="clean">
+          <li>考虑如何将弱测量的效应引入到蒙卡的框架中，研究已知的模型在不同测量强度下是否会出现反常的行为</li>
+          <li>注意到高自旋模型有更大的对称群，这意味着对称性破缺的磁构会更加丰富。正在考虑高自旋的晶格模型中是否会出现一些新颖的相，例如用四极序参量破缺平移对称性的非传统 $U(1)$ 超固相，同时破缺晶格平移对称和自旋 $SU(2)$ 对称的 $SU(2)$ 超固相……</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ===================== 履历 ===================== -->
+    <h2>履历</h2>
+    <ul class="clean">
+      <li>2025 年 9 月至今：中国科学院物理研究所，理论物理专业，博士研究生（导师：<a href="https://iop.cas.cn/rcjy/tpyjy/?id=4443" target="_blank" rel="noopener">李自翔</a>）</li>
+      <li>2021 年 9 月至 2025 年 7 月：中国人民大学物理学院物理学专业，学士（导师：<a href="https://phys.sysu.edu.cn/teacher/YinShuai" target="_blank" rel="noopener">阴帅</a>）</li>
+      <li>2018 年 9 月至 2021 年 7 月：北京市第八十中学</li>
+    </ul>
+
+    <!-- ===================== 个人荣誉 ===================== -->
+    <h2>个人荣誉</h2>
+    <ul class="clean">
+      <li>2024 年，国家奖学金</li>
+      <li>2022 年，中国人民大学三好学生</li>
+      <li>2022 年，中国人民大学理学院理学英才奖学金（一等）</li>
+      <li>2022 年，中国人民大学学习优秀奖学金（三等）</li>
+    </ul>
+
+    <!-- ===================== 已修习课程 ===================== -->
+    <h2>已修习课程</h2>
+    <ul class="clean">
+      <li>RUC 本科课程：理论力学、电动力学、量子力学、统计物理、固体物理、计算物理</li>
+      <li>UCAS 研究生课程：群论、量子场论、固体理论、量子统计、半导体物理、冷原子物理</li>
+    </ul>
+
+  </main>
+
+  <!-- ===================== 页脚 ===================== -->
+  <footer class="site-footer">
+    © <span id="year"></span> Ryelin · Hosted on GitHub Pages
+  </footer>
+
+  <!-- 自动把页脚年份更新为当前年份，省得每年手动改 -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

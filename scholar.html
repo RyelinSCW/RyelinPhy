@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryelin - 学术论文与笔记</title>
+  <meta name="description" content="Ryelin 的学术论文列表与阅读/课程笔记。" />
+  <!-- 与首页共用同一份样式表 -->
+  <link rel="stylesheet" href="assets/css/ryelin.css" />
+
+  <!-- ===== MathJax：渲染论文摘要与笔记中的数学公式 ===== -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <!-- ===================== 顶部导航栏 ===================== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Ryelin</a>
+      <div class="nav-links">
+        <a href="index.html">主页</a>
+        <!-- 当前页 scholar.html 用 active 高亮 -->
+        <a class="active" href="scholar.html">学术论文与笔记</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ===================== 学术论文（正式发表/预印本） ===================== -->
+    <h2>学术论文</h2>
+
+    <ul class="clean">
+      <li>
+        Si-Cheng Wang, Zheng-Xin Liu.
+        Supersolid phase in a <em>U</em>(2) symmetric <em>S</em> = 1 magnet on the triangular lattice.
+        <em>Chin. Phys. B</em>, 2026, 35(4): 047506.
+      </li>
+      <li>努力工作中……</li>
+    </ul>
+
+    <!-- ===================== Note 与论文 ===================== -->
+    <h2>Note 与论文</h2>
+
+    <!-- 说明：以下各条目的 PDF 若需对外下载，请把文件放入本仓库的 files/ 目录，
+         然后把对应条目的 href 改为 "files/文件名.pdf" 即可。 -->
+
+    <!-- ---------- 条目 1：arXiv 预印本 ---------- -->
+    <article class="card">
+      <h3 class="card-title">
+        <a href="https://arxiv.org/abs/2509.20772" target="_blank" rel="noopener">
+          [2509.20772] Super-Solid phase in a U(2) symmetric S = 1 Magnet on the Triangular Lattice
+        </a>
+      </h3>
+
+      <p class="card-meta tag-links">
+        <!-- 提供 PDF 直链，方便读者一键下载 -->
+        <a href="https://arxiv.org/pdf/2509.20772" target="_blank" rel="noopener">[PDF]</a>
+        <a href="https://arxiv.org/abs/2509.20772" target="_blank" rel="noopener">[Abstract]</a>
+      </p>
+
+      <!-- 英文摘要（原文照录） -->
+      <p class="card-body">
+        A spin supersolid is characterized by the simultaneous breaking of lattice translation and
+        continuous spin rotation symmetries. In this work, we study a spin-1 model with
+        $U(2)\cong SU(2)\times U(1)/Z_2$ symmetry on the triangular lattice, and the phase diagram is
+        figured out using a variational $\mathbb{CP}^2$ approach. We identify a novel $SU(2)$-supersolid
+        phase which contains a 3-sublattice solid order and a spin-superfluid order. Unlike usual
+        supersolid phases having noncollinear magnetic order and only one Goldstone mode, the
+        $SU(2)$-supersolid phase has collinear Néel order and two Goldstone modes. Another important
+        feature of this supersolid is that the magnon excitation spectrum has symmetry protected double
+        degeneracy in the whole Brillouin zone. As by-products, several other ordered phases are obtained,
+        including the ferromagnetic and the antiferromagnetic states breaking the $SU(2)$ symmetry, as
+        well as genuine phases that completely break the $U(2)$ symmetry. Furthermore, the instabilities
+        of $SU(3)$-flavor linear spin-wave theory are consistent with the phase boundaries between
+        different ordered phases.
+      </p>
+
+      <!-- 中文解读 -->
+      <p class="card-body">
+        自旋 $1/2$ XXZ 模型中会出现超固相，这是从 2005 年最开始发现三角晶格上的自旋超固相以后，
+        经过了一系列的研究最终基本上被广为认可的结论。在这种模型中，$\hat S^z$ 作为序参量破缺了
+        晶格平移对称，而 $\hat{\boldsymbol{S}}^{xy}$ 则对偶到玻色子模型中的相位，当出现长程序时
+        破缺了对应的 $U(1)$ 对称性，出现超流序，这两种有序共存构成了超固相的物理图景。按这个想法
+        来看，如果模型的对称群更大，那么理所应当会存在类似的、用不同的物理量作为序参量表征不同的
+        对称性破缺共存的相。
+      </p>
+
+      <p class="card-body">
+        为此，我们用 Gell-Mann 矩阵构造了一个类似的 spin-1 系统里具有 $U(2)$ 对称性的模型，并且
+        用经典的变分计算，在其中确实找到了一个可能的破掉自旋 $SU(2)$ 和晶格平移对称的推广意义上的
+        “超固”相，我们命名为 $SU(2)$ 超固相。这种超固的超流序是两个 Goldstone mode 行为的，而且
+        自旋波谱受到对称性保护存在二重简并。
+      </p>
+
+      <p class="card-meta">合作者：刘正鑫</p>
+    </article>
+
+    <!-- ---------- 条目 2：本科毕业论文 ---------- -->
+    <article class="card">
+      <h3 class="card-title">[本科毕业论文] 经典多极序的蒙特卡洛与变分研究</h3>
+
+      <!-- 若上传 PDF，请取消下一行注释并填写文件名 -->
+      <!-- <p class="card-meta tag-links"><a href="files/thesis.pdf" target="_blank">[PDF]</a></p> -->
+
+      <p class="card-body">
+        以量子直积态作为变分波函数的经典蒙特卡洛和经典变分方案，是数值研究各类晶格自旋模型的零温
+        基态和有限温有序相结构的重要手段。长期以来，这一类经典算法主要被应用于 $S = 1/2$ 自旋的
+        具有 Ising 交换相互作用的耦合模型，并往往给出公度偶极序结构的预言。在本研究中，我们试图
+        进行两方面的推广：其一，我们希望将这类算法应用于具有更一般偶极相互作用的模型，这一相互作用
+        可以有效地描述电荷自由度上的相互作用；其二，我们希望在 $S=1$ 的若干模型上运用这一方案。
+      </p>
+
+      <p class="card-body">
+        首先，在对三维立方晶格上铁磁 Heisenberg 模型的蒙卡模拟中，我们如预期得到了铁磁–顺磁转变
+        的相变温度，并阐明了以静态结构因子描述相变行为的有效性以及并行退火设置的合理性；而对扩展
+        Kitaev 模型的变分方案成功预言了 Zigzag 有序相，说明了变分方案的有效性。紧接着，我们利用
+        变分方案，说明了对六角晶格上的唯象电偶极相互作用模型在零场下存在转角 $120^\circ$ 序和反铁电
+        相，并且在加入电场后，$z$ 方向上的铁电序和面内的转角 $120^\circ$ 序共存。进一步，利用蒙卡
+        方案，我们证实从反铁电相出发，经均匀电场的诱导，静态结构因子在非高对称点出现峰值，这支持了
+        一种非公度序的存在。
+      </p>
+
+      <p class="card-body">
+        其次，我们发现，$S = 1$ 的 Bilinear-biquadratic 模型上涌现了使得磁偶极算符的期望归零、而以
+        四极算符作为序参量的铁四极序和反铁四极序，从而指出高自旋模型下多极序的存在。另一方面，仿照
+        $S = 1/2$-XXZ 的自发对称性破缺模式，我们设计了一种具有 $U(2)\times T$ 对称性的 $S = 1$
+        模型，并利用经典变分方案给出了 $\lambda^8$ 反铁磁参数设置下的三子格变分相图。我们发现其基态
+        存在由 $\lambda^{1,2,3}$ 和 $\lambda^8$ 分别作为序参量的多重对称性破缺，和 $1/2$-XXZ 情形
+        相对应，这可能对应于一种 $U(2)$ 对称性下的超固相。除此以外，一系列 $SU(3)$ 序参量所描述的
+        有序相被发现，我们对其上序参量的分布进行了讨论。这部分工作是 2509.20772 的前体工作。
+      </p>
+
+      <p class="card-meta">合作者：刘正鑫</p>
+    </article>
+
+    <!-- ---------- 条目 3：课程论文 ---------- -->
+    <article class="card">
+      <h3 class="card-title">[课程论文] Ising 模型及其相变的数值模拟</h3>
+
+      <!-- 若上传 PDF，请取消下一行注释并填写文件名 -->
+      <!-- <p class="card-meta tag-links"><a href="files/ising.pdf" target="_blank">[PDF]</a></p> -->
+
+      <ul class="clean card-body">
+        <li>由李涛老师主持《课题研究》的课程论文，我的蒙卡入坑之作，同时也可以视为统计物理中蒙特卡洛这一话题的 Note。</li>
+        <li>成文在 2024 年年初，因此仅体现截至该时期对于这一话题的认知和理解。这意味着从现在的视角来看里面有很多的内容与工作是有问题的，这里只作说明，本文不再维护。</li>
+      </ul>
+    </article>
+
+    <!-- ---------- 条目 4：课堂笔记 ---------- -->
+    <article class="card">
+      <h3 class="card-title">[课堂笔记] 量子力学专题</h3>
+      <ul class="clean card-body">
+        <li>对本科课程《量子力学》的复习笔记，配套讲义为李涛教授的《量子力学讲义》。鉴于这是我的短打之作，本 Note 不建议作为入门参考。</li>
+      </ul>
+    </article>
+
+  </main>
+
+  <!-- ===================== 页脚 ===================== -->
+  <footer class="site-footer">
+    © <span id="year"></span> Ryelin · Hosted on GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

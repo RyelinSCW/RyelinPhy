@@ -1,0 +1,203 @@
+/* =========================================================
+   Ryelin 个人主页样式表 (ryelin.css)
+   说明：本文件仅服务于 index.html 与 scholar.html 两个手写页面，
+   不依赖任何前端框架，纯 CSS 实现，便于日后自行修改。
+   ========================================================= */
+
+/* ---------- 全局基础样式 ---------- */
+* {
+  box-sizing: border-box; /* 让 padding/border 计入宽度，避免布局溢出 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* 使用系统自带字体，兼顾中文与英文显示，无需额外加载字体文件 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei",
+    "PingFang SC", "Hiragino Sans GB", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+
+/* ---------- 顶部导航栏 ---------- */
+.site-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e4e8;
+  position: sticky; /* 滚动时固定在顶部 */
+  top: 0;
+  z-index: 10;
+}
+
+.site-nav .nav-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-nav .nav-brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: #24292f;
+  text-decoration: none;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.site-nav .nav-links a {
+  color: #57606a;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.site-nav .nav-links a:hover,
+.site-nav .nav-links a.active {
+  color: #0969da; /* 悬停或当前页高亮为蓝色 */
+}
+
+/* ---------- 主体内容容器 ---------- */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+/* ---------- 标题层级 ---------- */
+h1 {
+  font-size: 30px;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 40px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #d0d7de; /* 区块标题下的分隔线 */
+}
+
+h3 {
+  font-size: 18px;
+  margin: 24px 0 8px;
+}
+
+/* ---------- 首页个人信息头部（照片 + 简介） ---------- */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.profile .photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover; /* 裁剪填充，保证头像不变形 */
+  border-radius: 10px;
+  border: 1px solid #e1e4e8;
+  flex-shrink: 0;
+}
+
+.profile .intro {
+  flex: 1 1 320px;
+}
+
+.profile .intro p {
+  margin: 6px 0;
+}
+
+/* 副标题/说明文字使用灰色 */
+.muted {
+  color: #57606a;
+  font-size: 15px;
+}
+
+/* ---------- 列表样式 ---------- */
+ul.clean {
+  margin: 8px 0;
+  padding-left: 22px;
+}
+
+ul.clean li {
+  margin: 6px 0;
+}
+
+/* 嵌套列表（研究方向下的子项）保持紧凑 */
+ul.clean ul {
+  margin: 4px 0;
+}
+
+/* ---------- 链接 ---------- */
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 卡片区块（用于论文条目等） ---------- */
+.card {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 16px 0;
+}
+
+.card .card-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.card .card-meta {
+  color: #57606a;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.card .card-body {
+  margin: 10px 0 0;
+}
+
+/* 论文条目中的外部链接小标签 */
+.tag-links a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+/* ---------- 页脚 ---------- */
+.site-footer {
+  text-align: center;
+  color: #8b949e;
+  font-size: 13px;
+  padding: 24px 20px 40px;
+}
+
+/* ---------- 窄屏适配 ---------- */
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile .intro {
+    text-align: left;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
