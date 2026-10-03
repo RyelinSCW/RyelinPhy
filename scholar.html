@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryelin - 学术论文与笔记</title>
-  <meta name="description" content="Ryelin 的学术论文列表与阅读/课程笔记。" />
-  <!-- 与首页共用同一份样式表 -->
+  <title>Ryelin - 论文、Note 与其它开源资料</title>
+  <meta name="description" content="Ryelin 的论文、笔记与开源资料。" />
+  <!-- 与首页、致谢页共用同一份样式表 -->
   <link rel="stylesheet" href="assets/css/ryelin.css" />
 
   <!-- ===== MathJax：渲染论文摘要与笔记中的数学公式 ===== -->
@@ -33,32 +33,19 @@
       <div class="nav-links">
         <a href="index.html">主页</a>
         <!-- 当前页 scholar.html 用 active 高亮 -->
-        <a class="active" href="scholar.html">学术论文与笔记</a>
+        <a class="active" href="scholar.html">论文与资料</a>
+        <a href="acknowledge.html">共享与致谢</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
 
-    <!-- ===================== 学术论文（正式发表/预印本） ===================== -->
-    <h2>学术论文</h2>
+    <h2>论文、Note 与其它开源资料</h2>
 
-    <ul class="clean">
-      <li>
-        Si-Cheng Wang, Zheng-Xin Liu.
-        Supersolid phase in a <em>U</em>(2) symmetric <em>S</em> = 1 magnet on the triangular lattice.
-        <em>Chin. Phys. B</em>, 2026, 35(4): 047506.
-      </li>
-      <li>努力工作中……</li>
-    </ul>
+    <!-- 说明：PDF 文件均存放在本仓库 files/ 目录，链接为相对路径。 -->
 
-    <!-- ===================== Note 与论文 ===================== -->
-    <h2>Note 与论文</h2>
-
-    <!-- 说明：以下各条目的 PDF 若需对外下载，请把文件放入本仓库的 files/ 目录，
-         然后把对应条目的 href 改为 "files/文件名.pdf" 即可。 -->
-
-    <!-- ---------- 条目 1：arXiv 预印本 ---------- -->
+    <!-- ================= 条目：arXiv 预印本 ================= -->
     <article class="card">
       <h3 class="card-title">
         <a href="https://arxiv.org/abs/2509.20772" target="_blank" rel="noopener">
@@ -106,10 +93,10 @@
         自旋波谱受到对称性保护存在二重简并。
       </p>
 
-      <p class="card-meta">合作者：刘正鑫</p>
+      <p class="card-meta"><strong>合作者：</strong>刘正鑫</p>
     </article>
 
-    <!-- ---------- 条目 2：本科毕业论文 ---------- -->
+    <!-- ================= 条目：本科毕业论文 ================= -->
     <article class="card">
       <!-- 标题本身即为 PDF 超链接，文件位于仓库 files/thesis_classical_multipolar.pdf -->
       <h3 class="card-title">
@@ -144,10 +131,10 @@
         有序相被发现，我们对其上序参量的分布进行了讨论。这部分工作是 2509.20772 的前体工作。
       </p>
 
-      <p class="card-meta">合作者：刘正鑫</p>
+      <p class="card-meta"><strong>合作者：刘正鑫</strong></p>
     </article>
 
-    <!-- ---------- 条目 3：课程论文 ---------- -->
+    <!-- ================= 条目：课程论文 ================= -->
     <article class="card">
       <!-- 标题本身即为 PDF 超链接，文件位于仓库 files/course_ising_simulation.pdf -->
       <h3 class="card-title">
@@ -160,11 +147,58 @@
       </ul>
     </article>
 
-    <!-- ---------- 条目 4：课堂笔记 ---------- -->
+    <!-- ================= 条目：课堂笔记 量子力学专题 ================= -->
     <article class="card">
       <h3 class="card-title">[课堂笔记] 量子力学专题</h3>
       <ul class="clean card-body">
-        <li>对本科课程《量子力学》的复习笔记，配套讲义为李涛教授的《量子力学讲义》。鉴于这是我的短打之作，本 Note 不建议作为入门参考。</li>
+        <li><a href="files/qm_review.pdf" target="_blank" rel="noopener">本科课程《量子力学》的复习笔记</a>，配套讲义为李涛教授的《量子力学讲义》。鉴于这是我的短打之作，本 Note 不建议作为入门参考。</li>
+        <li><a href="files/qm_handwritten.pdf" target="_blank" rel="noopener">本科《量子力学》手写笔记</a>（文件很大，字迹不甚清晰，仅供参考）。</li>
+        <li><a href="files/modern_qm_notes.pdf" target="_blank" rel="noopener">《高等量子力学》讲义</a>。</li>
+      </ul>
+    </article>
+
+    <!-- ================= 条目：课堂笔记 固体物理 ================= -->
+    <article class="card">
+      <!-- 标题本身即为 PDF 超链接，文件位于仓库 files/solid_state_notes.pdf -->
+      <h3 class="card-title">
+        <a href="files/solid_state_notes.pdf" target="_blank" rel="noopener">[课堂笔记] 固体物理</a>
+      </h3>
+      <ul class="clean card-body">
+        <li>对本科课程《固体物理》和《磁学与磁性材料》的听课笔记。</li>
+        <li>手写笔记见 <a href="files/solid_state_handwritten.pdf" target="_blank" rel="noopener">pdf</a>。</li>
+      </ul>
+    </article>
+
+    <!-- ================= 条目：课堂笔记 热力学与统计物理 ================= -->
+    <article class="card">
+      <h3 class="card-title">[课堂笔记] 热力学与统计物理</h3>
+      <ul class="clean card-body">
+        <li><a href="files/thermo_stat_notes.pdf" target="_blank" rel="noopener">本科《热力学与统计物理》的课堂笔记</a>，从编排的角度考虑还有些内容没有完成。</li>
+        <li><a href="files/quantum_stat_notes.pdf" target="_blank" rel="noopener">研究生《量子统计物理》的课堂笔记</a>，从编排的角度最后一章写的尚未完善。</li>
+      </ul>
+    </article>
+
+    <!-- ================= 条目：课堂笔记 群论 ================= -->
+    <article class="card">
+      <!-- 标题本身即为 PDF 超链接，文件位于仓库 files/group_theory_notes.pdf -->
+      <h3 class="card-title">
+        <a href="files/group_theory_notes.pdf" target="_blank" rel="noopener">[课堂笔记] 群论</a>
+      </h3>
+      <ul class="clean card-body">
+        <li>本科时《群论》以及研究生群论的课堂笔记，有些内容没有完善。</li>
+      </ul>
+    </article>
+
+    <!-- ================= 条目：录像 ================= -->
+    <article class="card">
+      <h3 class="card-title">[录像] 凝聚态物理导论读书会</h3>
+      <p class="card-body">
+        参与了一位南京大学的学长发起的凝聚态物理读书会，讲解了三次讨论班，录像视频分别如下：
+      </p>
+      <ul class="clean card-body">
+        <li><a href="https://www.bilibili.com/video/BV1774UzJE4n/?spm_id_from=333.337.search-card.all.click&amp;vd_source=e0b5b5957be74b54f441bf31b6ef17aa" target="_blank" rel="noopener">哈伯德模型、扩展哈伯德模型、tj 模型</a></li>
+        <li><a href="https://www.bilibili.com/video/BV1LBWmzKE3z?spm_id_from=333.788.videopod.sections&amp;vd_source=e0b5b5957be74b54f441bf31b6ef17aa" target="_blank" rel="noopener">tj 模型、VBS、RVB</a></li>
+        <li><a href="https://www.bilibili.com/video/BV1iMsDzjE3m?spm_id_from=333.788.videopod.sections&amp;vd_source=e0b5b5957be74b54f441bf31b6ef17aa" target="_blank" rel="noopener">铁磁自旋波、反铁磁自旋波、HP 变换、Schwinger 玻色子</a></li>
       </ul>
     </article>
 
